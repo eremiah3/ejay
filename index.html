@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hillary & Grace Wedding</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Overlay background -->
+  <div class="overlay"></div>
+
+  <!-- Background music -->
+  <audio id="bg-music" autoplay loop>
+    <source src="romantic.mp3" type="audio/mp3" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Main container -->
+  <main class="container">
+    <section class="hero">
+      <img src="couple.jpg" alt="Hillary and Grace" class="couple-img" />
+      <h1>You're Invited</h1>
+      <p>
+        You are warmly invited to the wedding celebration of Hillary John and Ushie Grace.
+      </p>
+      <p>
+        <strong>Date:</strong> 23 August 2025 <br />
+        <strong>Time:</strong> 12:00 PM <br />
+        <strong>Venue:</strong> Chief Adegbovega Martins Hall Oshodi Local Goverment
+      </p>
+      <p>
+        Your presence would mean the world to us as we begin this new chapter together. <br />
+        For those who wish to support us in any way, your kind gestures and contributions will be sincerely appreciated.
+      </p>
+    </section>
+
+    <section class="accounts">
+      <div class="account-box">
+        <h2>Wema Bank</h2>
+        <p class="account-number">0280252953</p>
+        <span class="name">Chukwuemeka John Hillary</span>
+      </div>
+      <div class="account-box">
+        <h2>Opay</h2>
+        <p class="account-number">9057275627</p>
+        <span class="name">Hillary John Chukwuemeka</span>
+      </div>
+    </section>
+
+    <footer>
+      <p>With love, <strong>Hillary & Grace</strong> 💍 | Thank you for your support 🕊️</p>
+    </footer>
+  </main>
+
+  <script>
+  const music = document.getElementById('bg-music');
+  music.volume = 0.2;
+
+  // Fallback in case autoplay is blocked
+  document.body.addEventListener('click', () => {
+    if (music.paused) {
+      music.play().catch(() => {});
+    }
+  });
+</script>
+
+</body>
+</html>
