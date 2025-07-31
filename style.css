@@ -114,62 +114,56 @@ body {
   color: #bbb;
 }
 .map-section {
-  padding: 40px 20px;
-  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+  padding: 60px 20px;
+  background-color: #f5f5f5;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.map-card.glass {
-  backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  padding: 30px 25px;
-  max-width: 500px;
+.map-card {
+  background-color: #ffffff;
+  padding: 30px;
+  max-width: 600px;
   width: 100%;
-  color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.map-card h3 {
+.map-card h2 {
   font-size: 24px;
+  color: #222;
   margin-bottom: 10px;
-  color: #fff;
 }
 
 .map-card p {
   font-size: 16px;
+  color: #555;
   margin-bottom: 20px;
-  color: #f0f0f0;
 }
 
 .map-embed iframe {
   width: 100%;
-  height: 300px;
-  border-radius: 16px;
+  height: 320px;
   border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-.direction-btn.glass-btn {
+.map-btn {
   display: inline-block;
-  margin-top: 20px;
   padding: 12px 24px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
-  font-weight: bold;
-  font-size: 16px;
+  background-color: #1e40af;
+  color: white;
+  border-radius: 8px;
   text-decoration: none;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(8px);
+  font-weight: 500;
   transition: background 0.3s ease;
 }
 
-.direction-btn.glass-btn:hover {
-  background: rgba(255, 255, 255, 0.25);
+.map-btn:hover {
+  background-color: #1d4ed8;
 }
 
 
