@@ -113,6 +113,38 @@ body {
   font-size: 0.9rem;
   color: #bbb;
 }
+.map-section {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.map-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+.map-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #ffff;
+}
+
+.map-subtext {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #4b5563;
+}
+
+.responsive-map iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+
 
 footer {
   text-align: center;
@@ -135,3 +167,9 @@ footer {
     width: 100%;
   }
 }
+@media (min-width: 768px) {
+  .responsive-map iframe {
+    height: 400px;
+  }
+}
+
